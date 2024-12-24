@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/survey-core@1.12.15/survey.core.min.js"></script>
+    <script src="https://unpkg.com/survey-core@1.12.15/survey.i18n.min.js"></script>
+    <script src="https://unpkg.com/survey-core@1.12.15/themes/index.min.js"></script>
+    <script src="https://unpkg.com/survey-js-ui@1.12.15/survey-js-ui.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/survey-core@1.12.15/defaultV2.min.css"
+    />
+    <link rel="stylesheet" href="./formIndex.css" />
+  </head>
+
+  <body>
+    <div id="surveyElement"
+    style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; min-height: 100%; height:100%"></div>
+
+    <div class="overlay">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <strong>Loading components ...</strong>
+          <p></p>
+          <span class="text-muted">Please wait...</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="./formJson.js"></script>
+    <script src="./formIndex.js"></script>
+
+    <script src="./formData.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="./formScript.js"></script>
+  </body>
+</html>
