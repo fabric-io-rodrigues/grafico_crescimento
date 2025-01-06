@@ -1,7 +1,12 @@
 
 altura_alvo_media = calcular_altura_alvo(dados_paciente["altura_pai"], dados_paciente["altura_mae"], dados_paciente['sexo_id'])
-altura_alvo_maxima = altura_alvo_media * 1.02
-altura_alvo_minima = altura_alvo_media * 0.97
+altura_alvo_maxima = altura_alvo_media + 5 # 5 cm acima da média
+altura_alvo_minima = altura_alvo_media - 5 # 5 cm abaixo da média
+# com base: https://www.sbp.com.br/fileadmin/user_upload/2016/09/CrescimentoVe8.pdf
+# A altura alvo é calculada somando-se a altura do pai e da mãe e 
+# acrescentando-se 13 cm para meninos e subtraindo-se 13 cm para 
+# meninas. O resultado é dividido por 2. A variação normal da 
+# altura alvo é de 5 cm para mais ou para menos.
 
 plt.clf();
 plt.cla();
